@@ -1,0 +1,136 @@
+/* styles.scss */
+
+$primary-color: #333;
+$secondary-color: #007bff;
+$background-color: #f4f4f9;
+$text-color: #333;
+$card-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+$border-radius: 5px;
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+header {
+    background: $primary-color;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        margin: 0 1rem;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: $border-radius;
+    padding: 1rem;
+    box-shadow: $card-shadow;
+    width: calc(33.333% - 2rem);
+
+    h3 {
+        margin: 0 0 1rem;
+    }
+
+    p {
+        margin: 0 0 1rem;
+    }
+
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1rem;
+    border-radius: $border-radius;
+    box-shadow: $card-shadow;
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: $border-radius;
+    }
+
+    button {
+        background: $primary-color;
+        color: #fff;
+        border: none;
+        padding: 0.7rem 1.5rem;
+        border-radius: $border-radius;
+        cursor: pointer;
+
+        &:hover {
+            background: darken($primary-color, 10%);
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: $primary-color;
+    color: #fff;
+    margin-top: 2rem;
+}
